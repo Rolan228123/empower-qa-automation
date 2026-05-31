@@ -1,0 +1,28 @@
+{
+  "name": "empower-automation",
+  "version": "1.0.0",
+  "description": "Playwright TDD automation framework targeting empower.com — built by Rolan Vataev",
+  "main": "index.js",
+  "scripts": {
+    "test:all": "npx playwright test",
+    "test:all:headed": "npx playwright test --headed",
+    "test:smoke": "npx playwright test --grep @smoke",
+    "test:smoke:headed": "npx playwright test --headed --grep @smoke",
+    "test:regression": "npx playwright test --grep @regression",
+    "test:homepage": "npx playwright test --grep @homepage",
+    "test:navigation": "npx playwright test --grep @navigation",
+    "test:login": "npx playwright test --grep @login",
+    "test:accessibility": "npx playwright test --grep @accessibility",
+    "test:security": "npx playwright test --grep @security",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "Rolan Vataev",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^10.3.0",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.0",
+    "dotenv": "^17.2.3"
+  }
+}
