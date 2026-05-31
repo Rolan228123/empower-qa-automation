@@ -7,6 +7,7 @@ test.describe("EPIC-01 | Home Page | Footer Links @homepage @regression", () => 
 
   test.beforeEach(async ({ page }) => {
     homePage = new HomePage(page);
+    
   });
 
   test("TC-06 | Footer Privacy link is visible", async ({ page }) => {
